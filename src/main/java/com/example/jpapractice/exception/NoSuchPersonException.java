@@ -1,4 +1,7 @@
 package com.example.jpapractice.exception;
 
-public class NoSuchPerson {
+public class NoSuchPersonException extends RuntimeException {
+    public NoSuchPersonException(String message) {
+        super(message);
+    }
 }

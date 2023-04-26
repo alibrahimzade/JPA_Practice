@@ -1,4 +1,4 @@
-package com.example.jpapractice.person;
+package com.example.jpapractice.model;
 
 
 import jakarta.persistence.*;
