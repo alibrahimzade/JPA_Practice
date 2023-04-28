@@ -38,8 +38,8 @@ public class PersonController {
     }
 
 
-    @DeleteMapping("/delete")
-    public Optional<Person> deletePersonById(@RequestParam Long id){
+    @DeleteMapping("/delete/{id}")
+    public Person deletePersonById(Long id){
         return personService.deletePersonById(id);
     }
 

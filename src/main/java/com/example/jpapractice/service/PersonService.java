@@ -39,8 +39,7 @@ public class PersonService {
         personRepository.deleteById(id);
     }
 
-    public Optional<Person> deletePersonById(Long id){
-        Person person = personRepository.deletePersonById(id).orElseThrow( () -> new NoSuchPersonException("Person is not exist"));
-        return Optional.of(person);
+    public Person deletePersonById(Long id){
+         return personRepository.deletePersonById(id).orElseThrow( () -> new NoSuchPersonException("Person is not exist"));
     }
 }
