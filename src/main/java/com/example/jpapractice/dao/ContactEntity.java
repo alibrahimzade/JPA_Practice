@@ -1,4 +1,4 @@
-package com.example.jpapractice.model;
+package com.example.jpapractice.dao;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
@@ -22,4 +22,6 @@ public class ContactEntity {
     @JoinColumn(name = "student_id",referencedColumnName = "id")
     @JsonBackReference
     private StudentEntity studentEntity;
+
+
 }

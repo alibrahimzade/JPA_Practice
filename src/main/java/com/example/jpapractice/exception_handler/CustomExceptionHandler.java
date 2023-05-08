@@ -1,7 +1,7 @@
 package com.example.jpapractice.exception_handler;
 
 import com.example.jpapractice.exception.NoSuchPersonException;
-import com.example.jpapractice.model.ExceptionDTO;
+import com.example.jpapractice.dao.ExceptionDTO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;

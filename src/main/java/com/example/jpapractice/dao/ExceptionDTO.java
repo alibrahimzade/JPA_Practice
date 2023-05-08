@@ -1,4 +1,4 @@
-package com.example.jpapractice.model;
+package com.example.jpapractice.dao;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

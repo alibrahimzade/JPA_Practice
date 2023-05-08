@@ -1,13 +1,11 @@
 package com.example.jpapractice.contoller;
 
-import com.example.jpapractice.model.Person;
+import com.example.jpapractice.dao.Person;
 import com.example.jpapractice.service.PersonService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequiredArgsConstructor

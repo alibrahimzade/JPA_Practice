@@ -1,5 +1,4 @@
-package com.example.jpapractice.model;
-
+package com.example.jpapractice.dao;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -7,19 +6,17 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 @Entity
-@Table(name = "person")
-public class Person {
+@Table(name = "passport")
+public class PassportEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "name")
-    private String name;
+    private String serial;
 
-    @Column(name = "surname")
-    private String surname;
+
 }

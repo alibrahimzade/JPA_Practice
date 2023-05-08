@@ -1,4 +1,4 @@
-package com.example.jpapractice.model;
+package com.example.jpapractice.dao;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
@@ -27,4 +27,9 @@ public class StudentEntity {
     @OneToMany(mappedBy = "studentEntity",cascade = CascadeType.ALL)
     @JsonManagedReference
     private List<ContactEntity> contact;
+
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(name = "course_student", joinColumns = @JoinColumn(name = "student_id"),
+            inverseJoinColumns = @JoinColumn(name = "course_id"))
+    private List<CourseEntity> courseList;
 }

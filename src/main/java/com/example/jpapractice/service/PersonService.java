@@ -1,15 +1,13 @@
 package com.example.jpapractice.service;
 
 import com.example.jpapractice.exception.NoSuchPersonException;
-import com.example.jpapractice.model.Person;
+import com.example.jpapractice.dao.Person;
 import com.example.jpapractice.repository.PersonRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
